@@ -7,13 +7,28 @@
 
 </head>
 <body>
-    <div data-role="page">
+    <div data-role="page" id="page1">
         <div data-role="header">
             <h1>My First Page</h1>
         </div>
         <div data-role="main" class="ui-content">
             <h1>Hello  World</h1>
-            <p>This is data-role Main</p>
+            <p>This is data-role Main Page 1</p>
+            <a href="#page2" data-transition="flow">Page 2</a>
+        </div>
+        <div data-role="footer">
+            <h2>&copy; SamCogan 2014</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>My Second Page</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h1>Hello  World</h1>
+            <p>This is data-role Main. Page 2</p>
+            <a href="#page1">Page 1</a>
         </div>
         <div data-role="footer">
             <h2>&copy; SamCogan 2014</h2>
