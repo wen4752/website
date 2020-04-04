@@ -12,10 +12,25 @@
     <div data-role="page" id="page1" data-theme="c">
         <div data-role="header">
             <h1>My First Page</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="action" data-transition="turn">Page One</a></li>
+                    <li><a href="#page2" data-icon="alert" data-transition="flow">Page Two</a></li>
+                </ul>
+            </div>
         </div>
         <div data-role="main" class="ui-content">
             <h1>Hello  World</h1>
             <p>This is data-role Main Page 1</p>
+
+            <div data-role="collapsible">
+                <h1>Past work</h1>
+                <p>Look at my past work</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>Education</h1>
+                <p>Disini bisa di isi video dll</p>
+            </div>
             <a href="#page2" data-transition="flow">Page 2</a>
         </div>
         <div data-role="footer">
@@ -26,10 +41,28 @@
     <div data-role="page" id="page2" data-theme="b">
         <div data-role="header">
             <h1>My Second Page</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="action" data-transition="turn">Page One</a></li>
+                    <li><a href="#page2" data-icon="alert" data-transition="flow">Page Two</a></li>
+                    
+                </ul>
+            </div>
         </div>
         <div data-role="main" class="ui-content">
             <h1>Hello  World</h1>
             <p>This is data-role Main. Page 2</p>
+
+            <h1>Contact me</h1>
+
+            <form>
+                <label for="essay">Tell us what you think</label>
+                <textarea name="essay" id="essay" placeholder="Tell us how great we are"></textarea>
+                <label for="rate">Rate us of 10</label>
+                <input type="range" min="0" max="10" name="rate" id="rate"/>
+                <input type="submit" value="Rate My APP"name="submit" id="submit"/>
+            </form>
+
             <a href="#page1" data-transition="flip">Page 1</a>
         </div>
         <div data-role="footer">
